@@ -1,0 +1,22 @@
+const fs =require("fs");
+
+
+var writeFileSync ="1. writeFileSync : if file not exist then its create a file and push the text and if file is exxist then its only replace all text"
+//fs.writeFileSync('read.txt', writeFileSync);
+
+var appendFileSync="2. appendFileSync : its map/append a new text in existing file"
+//fs.appendFileSync('read.txt',appendFileSync)
+
+
+var Buffer="its by-default showing Buffer format text like binary text";
+var readFileSync="3. readFileSync : its help to read existing file.."
+
+
+/* const buf_Data=fs.readFileSync("read.txt")
+//now we have need to convert Buffer to string format
+org_Data=buf_Data.toString();
+console.log(org_Data);
+*/
+
+var renameSync="this functions help to rename existing file"
+fs.renameSync("readWrite.txt", "nodes.doc");
